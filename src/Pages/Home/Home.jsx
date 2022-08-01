@@ -1,6 +1,6 @@
+import styles from './home.module.scss';
 import React from 'react';
 import { useEffect, useState } from 'react';
-import styles from './home.module.scss';
 import { imageGallery } from '../../Shared/Utility/constant';
 import { LightgalleryItem, LightgalleryProvider } from "react-lightgallery";
 import Sample from '../Sample/Sample';

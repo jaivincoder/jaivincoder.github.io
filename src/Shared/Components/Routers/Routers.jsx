@@ -7,8 +7,8 @@ const Sample = lazy(() => import('../../../Pages/Sample/Sample'));
 const Routers = () => {
 
     const allRoutes = useRoutes([   
-        { path: '/home', element: <Home /> },
-        { path: '**', element: <Navigate to="/home" /> }
+        { path: '/*', element: <Home /> },
+        // { path: '/*', element: <Home /> }
     ])
 
     return (allRoutes)

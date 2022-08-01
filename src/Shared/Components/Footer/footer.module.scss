@@ -1,0 +1,114 @@
+.footer {
+    padding         : 1.5rem 1rem;
+    background-color: #000;
+    border-top      : 1px solid #fff;
+
+    .logo {
+        margin     : 0;
+        font-family: Roboto-bold;
+        font-size  : 2.5rem;
+        line-height: normal;
+    }
+
+    .list-heading {
+        font-size     : 1.2rem;
+        font-weight   : bold;
+        position      : relative;
+        padding-bottom: 1rem;
+        display       : inline-block;
+        margin-bottom : 0.25rem;
+
+        &::after {
+            content         : '';
+            position        : absolute;
+            top             : calc(100% + 6px - 1rem);
+            width           : 100%;
+            height          : 2px;
+            background-color: #fff;
+            left            : 0;
+        }
+
+
+    }
+
+    .footer-list {
+        margin-top       : 0.5rem;
+        display          : flex;
+        // flex-direction: column;
+        list-style       : none;
+        padding          : 0;
+        margin           : 0;
+        gap              : 0.25rem;
+
+        .list-item {
+            cursor: pointer;
+        }
+
+        &.cursor-none-list {
+            .list-item {
+                cursor: unset;
+            }
+        }
+
+    }
+
+}
+
+.terms-and-condition-box {
+    display         : flex;
+    align-items     : center;
+    justify-content : space-between;
+    border-top      : 1px solid #fff;
+    padding         : 2.4rem 3rem;
+    background-color: #000;
+
+    .text {
+        font-size: 1rem;
+        margin   : 0;
+    }
+
+
+
+    .text-box {
+        display: flex;
+        gap    : 1rem;
+
+
+        .text {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .footer {
+        padding-bottom: 0.5rem;
+
+        .logo {
+            margin-bottom: 1rem;
+        }
+
+        .footer-list {
+            margin-bottom: 1rem;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+
+    .footer {
+        padding-bottom: 0;
+
+        .logo {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-list {
+            margin-bottom: 1.5rem;
+        }
+
+    }
+
+}

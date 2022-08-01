@@ -1,0 +1,181 @@
+.nav {
+    display         : flex;
+    align-items     : center;
+    justify-content : space-between;
+    padding         : 1rem;
+    background-color: #000;
+    position        : relative;
+    z-index         : 99;
+    border-bottom   : 1px solid #fff;
+
+    .logo-box {
+        display: flex;
+
+        .logo {
+            margin                   : 0;
+            font-family              : 'lato', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size                : 2.5rem;
+            line-height              : normal;
+            font-weight              : 350;
+            background               : linear-gradient(white, #75787a);
+            background-clip          : text;
+            -webkit-text-fill-color  : transparent;
+            animation-iteration-count: infinite;
+
+
+            @keyframes example {
+                0% {
+                    left: 0px;
+                }
+
+                10% {
+                    left: calc(100% - 260px);
+                }
+
+                100% {
+                    left: 0px;
+                }
+            }
+        }
+    }
+
+
+
+    .menu-box {
+        display: flex;
+
+        .list {
+            display    : flex;
+            align-items: center;
+            column-gap : 1rem;
+            list-style : none;
+            margin     : 0;
+            padding    : 0;
+
+            .list-item {
+                display: flex;
+
+                &>* {
+                    font-size  : 16px;
+                    font-weight: normal;
+
+                    &.active {
+                        font-family: Roboto-bold;
+                        font-weight: bold;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    .mob-menu-button {
+        flex-direction: column;
+        cursor        : pointer;
+        row-gap       : 4px;
+
+        .menu-tap {
+            width           : 20px;
+            height          : 2px;
+            background-color: #fff;
+        }
+
+        &.active {
+            .menu-tap {
+                &:nth-child(2) {
+                    display: none;
+                }
+
+                &:nth-child(1) {
+                    transform    : rotate(135deg);
+                    transition   : transform 0.15s ease;
+                    margin-bottom: -3px;
+                }
+
+                &:nth-child(3) {
+                    transform : rotate(45deg);
+                    transition: transform 0.15s ease;
+                    margin-top: -3px;
+                }
+            }
+
+        }
+    }
+
+    .mob-menu-box {
+        flex-direction  : column;
+        position        : fixed;
+        top             : 3.5rem;
+        height          : calc(100vh - 3.5rem);
+        background-color: #000;
+        left            : 0;
+        width           : 300px;
+        transform       : translateX(-100%);
+        transition      : transform 0.15s ease;
+        z-index         : 100;
+
+        &.active {
+            transform : translateX(0);
+            transition: transform 0.15s ease;
+        }
+
+        .list {
+            display       : flex;
+            flex-direction: column;
+            column-gap    : 1rem;
+            list-style    : none;
+            margin        : 0;
+            padding       : 0;
+            margin-top    : 0.5rem;
+
+            .list-item {
+                display: flex;
+
+                &>* {
+                    padding  : 0.5rem 1rem;
+                    font-size: 16px;
+                    width    : 100%;
+                    cursor   : pointer;
+
+                    &.active {
+                        font-weight: bold;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .nav {
+
+        .logo-box {
+
+            .logo {
+                font-size              : 1.4rem;
+                background             : linear-gradient(white, #38495a);
+                background-clip        : text;
+                -webkit-text-fill-color: transparent;
+                animation-duration     : 6s;
+
+                @keyframes example {
+                    0% {
+                        left: 0px;
+                    }
+
+                    10% {
+                        left: calc(100% - 145px);
+                    }
+
+                    100% {
+                        left: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

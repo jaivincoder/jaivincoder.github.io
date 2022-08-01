@@ -1,0 +1,152 @@
+@font-face {
+    font-family: Roboto-regular;
+    src        : url('../../Assets/Fonts/Roboto-Bold.woff'), url('../../Assets/Fonts/Roboto-Bold.woff2');
+}
+
+@font-face {
+    font-family: Roboto-medium;
+    src        : url('../../Assets/Fonts/Roboto-Medium.woff'), url('../../Assets/Fonts/Roboto-Medium.woff2');
+}
+
+@font-face {
+    font-family: Roboto-bold;
+    src        : url('../../Assets/Fonts/Roboto-Regular.woff'), url('../../Assets/Fonts/Roboto-Regular.woff2');
+}
+
+html {
+    font-size  : 16px !important;
+    font-weight: 375 !important;
+    font-family: 'lato' !important;
+}
+
+body {
+    font-family: 'lato' !important;
+    font-size  : 1rem !important;
+    color      : #fff;
+    font-size  : 16px;
+    font-weight: 375 !important;
+}
+
+h4,
+h3 {
+    font-family: 'lato' !important;
+    color      : #fff;
+    font-size  : 1.3rem;
+    font-weight: 375 !important;
+}
+
+label {
+    color: #fff;
+}
+
+a {
+    color: #fff;
+}
+
+.backdrop {
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index         : 10;
+}
+
+a {
+    text-decoration: none;
+    font-family    : 'lato' !important;
+    font-weight    : 375 !important;
+    color          : unset;
+
+    &:hover {
+        color: unset;
+    }
+}
+
+.active-nav {
+    font-family: Roboto-bold;
+    font-weight: bold;
+}
+
+
+.button-box {
+    display    : flex;
+    align-items: center;
+    gap        : 1rem;
+}
+
+.button {
+    outline      : none;
+    border       : none;
+    padding      : 0.5rem 1rem;
+    border-radius: 4px;
+    font-size    : 1rem;
+
+    &.white {
+        background-color: #000;
+        color           : #fff;
+        border          : 1px solid #fff;
+    }
+}
+
+.input-text {
+    outline         : none;
+    border-radius   : 2px;
+    border          : 1px solid #fff;
+    padding         : 6px 14px;
+    color           : #fff;
+    font-size       : 16px;
+    background-color: #000;
+    width           : 100%;
+}
+
+.input-file {
+    display: none;
+}
+
+.file-button {
+    outline         : none;
+    border          : none;
+    padding         : 0.5rem 1rem;
+    border-radius   : 4px;
+    font-size       : 1rem;
+    background-color: #000;
+    color           : #fff;
+    border          : 1px solid #fff;
+    cursor          : pointer;
+}
+
+input,
+textarea {
+    ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color  : #fff;
+        opacity: 1;
+        /* Firefox */
+    }
+
+    :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #fff;
+    }
+
+    ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #fff;
+    }
+}
+
+.lg-outer .lg-inner {
+    top   : 47px;
+    bottom: 44px;
+    height: calc(100% - 91px);
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 14px
+    }
+}
+
+@import '~bootstrap/dist/css/bootstrap.css';

@@ -1,0 +1,133 @@
+.text-container > span {
+  text-transform: uppercase;
+  animation: glow 2s ease-in-out infinite;
+  font-size: 40px;
+}
+
+.text-container {
+  text-align: left;
+}
+
+.sec2 {
+  background-color: #000;
+}
+
+.main-low {
+  margin: auto;
+  justify-content: space-around;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    color: rgb(102, 184, 216);
+    text-shadow: 0 0 10px #015aff, 0 0 50px #0259f9, 0 0 100px #486aa7;
+  }
+
+  10%,
+  90% {
+    color: rgb(213, 200, 200);
+    text-shadow: none;
+  }
+}
+
+.main {
+  width: 80% !important;
+}
+
+label {
+  width: 50%;
+  margin: 10px auto;
+  font-size: 20px;
+}
+
+input,
+textarea {
+  width: 50%;
+  margin: auto;
+  border: none;
+  outline: none;
+  height: 50px;
+  padding: 10px;
+}
+
+textarea {
+  height: 180px;
+}
+
+form {
+  width: 100%;
+}
+
+.form-contact {
+  width: 100%;
+  margin: auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px auto;
+  
+}
+
+.form-contact {
+  display: flex;
+  justify-content: center;
+}
+
+.submitButton {
+  padding: 12px 25px;
+  width: 50%;
+  margin-top: 25px;
+  background-color: #000;
+  color: #ffff;
+  border: 1px solid #fff;
+}
+
+.submitButton:active {
+  background-color: rgb(122, 121, 121);
+}
+
+.submitButton:hover {
+  background-color: rgb(12, 10, 10);
+}
+
+.react-pdf__Page {
+  overflow: hidden !important;
+}
+
+@media only screen and (max-width: 960px) {
+  .text-container {
+    text-align: center;
+  }
+
+  .main-low {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .new-me {
+    align-items: center;
+    margin-top: 3rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  input, textarea, label, .submitButton {
+    width: 100%;
+  }
+
+  form {
+    padding: 20px
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  input, textarea, label, .submitButton {
+    width: 80%;
+  }
+
+  form {
+    padding: 20px
+  }
+}

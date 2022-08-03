@@ -10,7 +10,7 @@ const Home = () => {
 
     const about = 'Hi, There';
     const about2 = 'I am Jaivin';
-    const about3 = 'I am a full stack developer';
+    const about3 = 'I am a full stack developer.';
     const [aboutMe, setAboutMe] = useState([]);
     const [aboutMe2, setAboutMe2] = useState([]);
     const [aboutMe3, setAboutMe3] = useState([]);

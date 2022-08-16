@@ -1,4 +1,41 @@
-export const imageGallery = [{
+export const imageGallery = [
+    {
+        src: '/images/raisedays/1.png',
+        project: 'Raise days',
+        description: 'Angular @Raise Days',
+        group: "gallaty"
+    },
+    {
+        src: 'images/raisedays/2.png',
+        project: 'Raise days',
+        description: '',
+        group: "gallaty"
+    },
+    {
+        src: 'images/raisedays/3.png',
+        project: 'Raise days',
+        description: '',
+        group: "gallaty"
+    },
+    {
+        src: 'images/raisedays/4.png',
+        project: 'Raise days',
+        description: '',
+        group: "gallaty"
+    },
+    {
+        src: 'images/raisedays/5.png',
+        project: 'Raise days',
+        description: '',
+        group: "gallaty"
+    },
+    {
+        src: 'images/raisedays/6.png',
+        project: 'Raise days',
+        description: '',
+        group: "gallaty"
+    },
+{
     src: '/images/titan/1.png',
     project: 'Titan rental management',
     description: 'Reactjs && Nodejs @Skyllect Pvt Ltd',
@@ -124,4 +161,4 @@ export const imageGallery = [{
     description: '',
     group: "gallaty"
 }
-]
+];

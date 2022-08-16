@@ -10,9 +10,9 @@ const Home = () => {
 
     const about = 'Hi, There';
     const about2 = 'I am Jaivin';
-    const about3 = 'I am a full stack developer.';
+    const about3 = 'I am a full stack developer';
     const [aboutMe, setAboutMe] = useState([]);
-    const [aboutMe2, setAboutMe2] = useState([]);
+    const [aboutMe2, setAboutMe2] = useState([])
     const [aboutMe3, setAboutMe3] = useState([]);
 
     useEffect(() => {
@@ -70,7 +70,7 @@ const Home = () => {
                     <h4>
                         This is my freelancing profile.I have been providing services of technologies shown in the image above on Fiverr.com. Within a reasonable amount of timespan, I managed to achieve a level 1 seller tag with 99.99% of positive feedback and a 100% of on-time project delivery status.
                     </h4>
-                    FREELANCING PROFILE:-   <a style={{ textDecoration: 'underline' }} rel="noreferrer" href='https://www.fiverr.com/jaivinmovaliya?public_mode=true' target={'_blank'}>CLICK HERE TO CHECKOUT</a>
+                    <span>FREELANCING PROFILE:-</span>   <a style={{ textDecoration: 'underline' }} rel="noreferrer" href='https://www.fiverr.com/jaivinmovaliya?public_mode=true' target={'_blank'}>CLICK HERE TO CHECKOUT</a>
                 </div>
             </section>
             <section className={`${styles['gallery']}`}>
@@ -80,41 +80,6 @@ const Home = () => {
                 <p className={`${styles["section-description"]}  ${styles["f-2"]}`}>
                     I have worked on
                 </p>
-                {/* <LightGallery
-                    speed={500}
-                    download={false}
-                    selector={'a'}
-                    elementClassNames={`${styles['image-box']}`}
-                >
-                    {
-                        Array.isArray(imageGallery) && imageGallery.map((image, i) => {
-                            if (image.description) {
-                                description = image.description;
-                            }
-                            return (
-                                <React.Fragment key={i}>
-                                    {imageGallery[i]?.project !== imageGallery[i - 1]?.project &&
-                                        <div style={{ 'width': 'inherit' }} className={`text-center w-100  }`}>
-                                            <div className={`  ${styles["title-font"]}  ${image.project.split('.')?.length > 1 ? styles["web"] : ''} ${image.project.split('.')?.length > 1 ? styles["cursor-pointer"] : ''}`} onClick={() => shoudRedirect(image.project)}>
-                                                {image?.project}
-                                            </div>
-                                            {image.description &&
-                                                <div className={`${styles["main-color"]} ${styles["description-font"]} `}>
-                                                    {image.description}
-                                                </div>
-                                            }
-                                        </div>
-
-                                    }
-                                    <a className={`${styles['image-cover']} ${imageGallery[i] !== imageGallery[i - 1] && 'mt-5'} d-block`} key={image.src} href={image.src}>
-                                        <img alt={` ${description} Img-${i + 1}`} src={image.src} className={`${styles['image']}`} />
-                                    </a>
-                                </React.Fragment>
-                            )
-                        })
-                    }
-                </LightGallery> */}
-
                 <LightgalleryProvider lightgallerySettings={{ download: false, speed: 500, thumbnail: false, zoom: false, fullScreen: false, dynamic: true, flipHorizontal: false, top: "47px" }} >
                     <div className={`${styles['image-box']}`}>
                         {

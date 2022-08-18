@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.2dc3e10d.css",
+    "main.css": "/static/css/main.a7757faf.css",
     "main.js": "/static/js/main.97195250.js",
     "static/css/513.35679ef2.chunk.css": "/static/css/513.35679ef2.chunk.css",
     "static/js/513.3b00b1e3.chunk.js": "/static/js/513.3b00b1e3.chunk.js",
@@ -8,7 +8,7 @@
     "static/js/677.ca90b9ca.chunk.js": "/static/js/677.ca90b9ca.chunk.js",
     "static/js/268.f33a7e22.chunk.js": "/static/js/268.f33a7e22.chunk.js",
     "static/js/775.441452b7.chunk.js": "/static/js/775.441452b7.chunk.js",
-    "static/media/back-lo.jpg": "/static/media/back-lo.8604999ebd239b285b14.jpg",
+    "static/media/back-lo.jpg": "/static/media/back-lo.21490e7ad60544e08675.jpg",
     "static/media/Roboto-Medium.woff": "/static/media/Roboto-Medium.61c265591865cecb1c3d.woff",
     "static/media/Roboto-Bold.woff": "/static/media/Roboto-Bold.75a1a5b5582b236e0fe3.woff",
     "static/media/Roboto-Regular.woff": "/static/media/Roboto-Regular.774f99460b8c31560a3c.woff",
@@ -17,7 +17,7 @@
     "static/media/Roboto-Regular.woff2": "/static/media/Roboto-Regular.9429985be4f46ec8fcfc.woff2",
     "static/media/resume.pdf": "/static/media/resume.4b3e111a2e3be1637152.pdf",
     "index.html": "/index.html",
-    "main.2dc3e10d.css.map": "/static/css/main.2dc3e10d.css.map",
+    "main.a7757faf.css.map": "/static/css/main.a7757faf.css.map",
     "main.97195250.js.map": "/static/js/main.97195250.js.map",
     "513.35679ef2.chunk.css.map": "/static/css/513.35679ef2.chunk.css.map",
     "513.3b00b1e3.chunk.js.map": "/static/js/513.3b00b1e3.chunk.js.map",
@@ -27,7 +27,7 @@
     "775.441452b7.chunk.js.map": "/static/js/775.441452b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2dc3e10d.css",
+    "static/css/main.a7757faf.css",
     "static/js/main.97195250.js"
   ]
 }

@@ -62,7 +62,7 @@ const Home = () => {
                 </div>
             </section>
             <section className='sec2 mt-5'>
-                <Sample />
+                {/* <Sample /> */}
                 <div className={`${styles['fiverr-main']}`} >
                     <img alt={'...'} src={'images/fiverr.png'} className={`${styles['fiverr']}`} />
                 </div >

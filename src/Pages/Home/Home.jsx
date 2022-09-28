@@ -10,7 +10,7 @@ const Home = () => {
 
     const about = 'Hi, There';
     const about2 = 'I am Jaivin';
-    const about3 = 'I am a full stack developer';
+    const about3 = 'I am a Web Developer.';
     const [aboutMe, setAboutMe] = useState([]);
     const [aboutMe2, setAboutMe2] = useState([])
     const [aboutMe3, setAboutMe3] = useState([]);
@@ -31,7 +31,8 @@ const Home = () => {
 
     return (
         <div className={`${styles['home']}`}>
-            <section className={`${styles['main']} d-flex mt-5`}>
+            <section className={`${styles['main']}  mt-3`}>
+                <h1 style={{visibility: 'hidden'}}>Jaivin Movaliya</h1>
                 <div className='d-flex main-low w-100 justify-content-around'>
                     <div>
                         <img src={'images/profile.jpg'} alt="..." className={`${styles["section-main-image"]}`} />

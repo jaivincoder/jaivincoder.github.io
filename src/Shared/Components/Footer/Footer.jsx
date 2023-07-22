@@ -12,7 +12,7 @@ const Footer = () => {
                             <h6 className={styles['list-heading']}>Contact Me</h6>
                             <ul className={`${styles['footer-list']} ${styles['cursor-none-list']}`}>
                                 <li className={`${styles['list-item']}`}>
-                                    Email : jaivinmovaliya1999@gmail.com
+                                    
                                 </li>
                                 <li className={`${styles['list-item']}`}>
                                     {/* Phone : +91-1234567891 */}

@@ -35,7 +35,7 @@ const Home = () => {
                 <h1 style={{visibility: 'hidden'}}>Jaivin Movaliya</h1>
                 <div className='d-flex main-low w-100 justify-content-around'>
                     <div>
-                        <img src={'images/profile.jpg'} alt="..." className={`${styles["section-main-image"]}`} />
+                        {/* <img src={'images/profile.jpg'} alt="..." className={`${styles["section-main-image"]}`} /> */}
                     </div>
                     <div className='d-flex flex-column justify-content-center new-me'>
                         <div className="text-container">

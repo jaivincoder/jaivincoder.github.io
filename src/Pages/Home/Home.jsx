@@ -34,10 +34,7 @@ const Home = () => {
             <section className={`${styles['main']}  mt-3`}>
                 <h1 style={{visibility: 'hidden'}}>Jaivin Movaliya</h1>
                 <div className='d-flex main-low w-100 justify-content-around'>
-                    <div>
-                        {/* <img src={'images/profile.jpg'} alt="..." className={`${styles["section-main-image"]}`} /> */}
-                    </div>
-                    <div className='d-flex flex-column justify-content-center new-me'>
+                    <div className='d-flex flex-column justify-content-center new-me mb-5'>
                         <div className="text-container">
                             {
                                 aboutMe.length > 0 && aboutMe.map((data, index) => (

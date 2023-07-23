@@ -143,6 +143,21 @@ textarea {
     height: calc(100% - 91px);
 }
 
+@keyframes colorChange {
+    0% { color: #FF33CC; }    /* Light magenta */
+    25% { color: #CC66FF; }   /* Light purple */
+    50% { color: #66CCFF; }   /* Light blue */
+    75% { color: #66FFFF; }   /* Light aqua */
+    100% { color: #FFCC66; }  /* Light gold */
+  }
+
+  .text-animation {
+    animation: colorChange 5s infinite;
+    background-color: #000000; /* Black background */
+  }
+
+
+
 @media only screen and (max-width: 768px) {
     html {
         font-size: 14px

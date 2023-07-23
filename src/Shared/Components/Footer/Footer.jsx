@@ -45,7 +45,7 @@ const Footer = () => {
                 </p>
                 <div className={`${styles['text-box']}`}>
                     <p style={{ textDecoration: 'none' }} className={`${styles['text']}`}>
-                        <span class="text-animation">Made with ♥ by Jaivin Movaliya</span>
+                        <span><span className="text-animation">Made with</span><span style={{color:'red'}}> ♥ </span> <span className="text-animation">by Jaivin Movaliya</span></span>
                     </p>
                 </div>
             </div>

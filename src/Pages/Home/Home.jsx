@@ -60,13 +60,13 @@ const Home = () => {
                 </div>
             </section>
             <section className='sec2 mt-5'>
-                {/* <Sample /> */}
+                 <Sample />
                 <div className={`${styles['fiverr-main']}`} >
                     <img alt={'...'} src={'images/fiverr.png'} className={`${styles['fiverr']}`} />
                 </div >
                 <div className={`${styles['freelancing']} `}>
                     <h4>
-                        This is my freelancing profile.I have been providing services of technologies shown in the image above on Fiverr.com. Within a reasonable amount of timespan, I managed to achieve a level 1 seller tag with 99.99% of positive feedback and a 100% of on-time project delivery status.
+                        I'm delighted to share my journey on Fiverr.com, where I've completed 47 projects, receiving positive reviews consistently. I'm proud to have attained the Level 2 seller tag from Level 1 in a short-time, which reflects my commitment to delivering high-quality work. I have orders with a 99.99% positive feedback rate and a 100% on-time project delivery record, highlighting my dedication to providing top-notch service and ensuring client satisfaction.
                     </h4>
                     <span>FREELANCING PROFILE:-</span>   <a style={{ textDecoration: 'underline' }} rel="noreferrer" href='https://www.fiverr.com/jaivinmovaliya?public_mode=true' target={'_blank'}>CLICK HERE TO CHECKOUT</a>
                 </div>

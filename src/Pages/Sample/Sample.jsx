@@ -28,9 +28,9 @@ export default function Sample() {
                 </div>
                 <div className="Example__container__document">
                     <Document file={resume} renderMode={'svg'} onLoadSuccess={onDocumentLoadSuccess} options={options}>
-                        {Array.from(new Array(numPages), (el, index) => (
-                            <Page scale={1.5} key={`page_${index + 1}`} pageNumber={index + 1} />
-                        ))}
+                        {/*{Array.from(new Array(numPages), (el, index) => (*/}
+                        {/*    // <Page scale={1.5} key={`page_${index + 1}`} pageNumber={index + 1} />*/}
+                        {/*))}*/}
                     </Document>
                 </div>
             </div>

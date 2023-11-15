@@ -1,6 +1,6 @@
-import { BrowserRouter as Router } from 'react-router-dom';
+import {BrowserRouter as Router, HashRouter} from 'react-router-dom';
 import Layout from './Shared/Components/Layout/Layout'
 
-const App = () => <Router><Layout /></Router>
+const App = () => <HashRouter><Layout /></HashRouter>
 
 export default App;

@@ -1,7 +1,7 @@
 import styles from './home.module.scss';
 import React from 'react';
 import { useEffect, useState } from 'react';
-import { imageGallery } from '../../Shared/Utility/constant';
+import { imageGallery, reviewGallery } from '../../Shared/Utility/constant';
 import { LightgalleryItem, LightgalleryProvider } from "react-lightgallery";
 import Sample from '../Sample/Sample';
 import './home.css'
@@ -66,10 +66,34 @@ const Home = () => {
                 </div >
                 <div className={`${styles['freelancing']} `}>
                     <h4>
-                        I'm delighted to share my journey on Fiverr.com, where I've completed 47 projects, receiving positive reviews consistently. I'm proud to have attained the Level 2 seller tag from Level 1 in a short-time, which reflects my commitment to delivering high-quality work. I have orders with a 99.99% positive feedback rate and a 100% on-time project delivery record, highlighting my dedication to providing top-notch service and ensuring client satisfaction.
+                        I'm delighted to share my journey on Fiverr.com, where I've completed 55+ projects, receiving positive reviews consistently. I'm proud to have attained the Level 2 seller tag from Level 1 in a short-time, which reflects my commitment to delivering high-quality work. I have orders with a 99.99% positive feedback rate and a 100% on-time project delivery record, highlighting my dedication to providing top-notch service and ensuring client satisfaction.
                     </h4>
                     <span>FREELANCING PROFILE:-</span>   <a style={{ textDecoration: 'underline' }} rel="noreferrer" href='https://www.fiverr.com/jaivinmovaliya?public_mode=true' target={'_blank'}>CLICK HERE TO CHECKOUT</a>
                 </div>
+            </section>
+            <section className={`${styles['gallery']}`}>
+                <h3 className={`${styles["section-heading"]} ${styles["main-color"]}  ${styles["f-3"]} `}>
+                    Reviews from different clients
+                </h3>
+                <LightgalleryProvider lightgallerySettings={{ download: false, speed: 500, thumbnail: false, zoom: false, fullScreen: false, dynamic: true, flipHorizontal: false, top: "47px" }} >
+                    <div className={`${styles['image-box']}`}>
+                        {
+                            Array.isArray(reviewGallery) && reviewGallery.map((image, i) => {
+                                if (image.description) {
+                                    description = image.description;
+                                }
+                                return (
+                                    <React.Fragment key={i}>
+                                        <div key={i} className={`${styles['image-cover-review']} ${reviewGallery[i] !== imageGallery[i - 1] && 'mt-5'} d-flex justify-content-center`} >
+                                                <img alt={` ${description} Img-${i + 1}`} src={image.src} className={`${styles['image']}`} />
+                                        </div>
+                                    </React.Fragment>
+                                )
+                            })
+                        }
+                    </div>
+                </LightgalleryProvider>
+
             </section>
             <section className={`${styles['gallery']}`}>
                 <h3 className={`${styles["section-heading"]} ${styles["main-color"]}  ${styles["f-3"]} `}>

@@ -162,3 +162,27 @@ export const imageGallery = [
     group: "gallaty"
 }
 ];
+
+
+export  const reviewGallery = [
+    {
+        src: '/images/reviews/1.png',
+        description: 'Review',
+        group: "gallaty"
+    },
+    {
+        src: '/images/reviews/2.png',
+        description: 'Review',
+        group: "gallaty"
+    },
+    {
+        src: '/images/reviews/3.png',
+        description: 'Review',
+        group: "gallaty"
+    },
+    {
+        src: '/images/reviews/4.png',
+        description: 'Review',
+        group: "gallaty"
+    }
+]

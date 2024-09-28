@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Document, Page } from 'react-pdf';
 import './Sample.css';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
-import { pdfjs } from 'react-pdf';
-import resume from '../../Assets/pdf/resume.pdf'
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+// import { pdfjs } from 'react-pdf';
+// import resume from '../../Assets/pdf/resume.pdf'
+// pdfjs.Glo    balWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 // import 'react-pdf/dist/esm/Page/TextLayer.css';
 
 
@@ -27,11 +27,11 @@ export default function Sample() {
                 <div className="Example__container__load">
                 </div>
                 <div className="Example__container__document">
-                    <Document file={resume} renderMode={'svg'} onLoadSuccess={onDocumentLoadSuccess} options={options}>
+                    {/*<Document file={resume} renderMode={'svg'} onLoadSuccess={onDocumentLoadSuccess} options={options}>*/}
                         {/*{Array.from(new Array(numPages), (el, index) => (*/}
                         {/*    // <Page scale={1.5} key={`page_${index + 1}`} pageNumber={index + 1} />*/}
                         {/*))}*/}
-                    </Document>
+                    {/*</Document>*/}
                 </div>
             </div>
         </div>

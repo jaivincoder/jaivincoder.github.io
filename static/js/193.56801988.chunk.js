@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktemplate=self.webpackChunktemplate||[]).push([[193],{193:(e,a,s)=>{s.r(a),s.d(a,{default:()=>t});var l=s(43),n=(s(601),s(579));function t(){const[e,a]=(0,l.useState)(null);return(0,n.jsx)("div",{className:"Example",children:(0,n.jsxs)("div",{className:"Example__container",children:[(0,n.jsx)("div",{className:"Example__container__load"}),(0,n.jsx)("div",{className:"Example__container__document"})]})})}},601:()=>{}}]);
+//# sourceMappingURL=193.56801988.chunk.js.map

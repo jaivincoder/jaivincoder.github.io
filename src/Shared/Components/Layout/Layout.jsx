@@ -1,7 +1,8 @@
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import Routers from '../Routers/Routers';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import SpaceBackground from "../../SpaceBackground";
 
 
 const Layout = () => {
@@ -19,7 +20,8 @@ const Layout = () => {
     }, [])
 
     return (
-        <div className={isBlackTheme ? 'black_theme' : 'white_theme'}>
+        <div>
+            <SpaceBackground />
             <Navbar />
             <Routers />
             <Footer />

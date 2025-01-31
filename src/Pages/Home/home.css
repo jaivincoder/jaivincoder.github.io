@@ -9,13 +9,21 @@
 }
 
 .sec2 {
-  background-color: #000;
+  /*background-color: #000;*/
 }
 
 .main-low {
   margin: auto;
   justify-content: space-around;
 }
+
+html, body, #root, div, section {
+  margin: 0;
+  padding: 0;
+  background: transparent !important;
+  overflow: auto;
+}
+
 
 @keyframes glow {
   0%,
@@ -137,3 +145,6 @@ form {
     font-size: 18px;  
   }
 }
+
+
+

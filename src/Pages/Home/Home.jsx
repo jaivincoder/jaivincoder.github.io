@@ -63,14 +63,13 @@ const Home = () => {
                     </div>
                 </section>
                 <section className='sec2 mt-5'>
-                    <Sample />
+                    {/*<Sample />*/}
                     <div className={`${styles['fiverr-main']}`} >
                         <img alt={'...'} src={'images/fiverr.png'} className={`${styles['fiverr']}`} />
                     </div >
                     <div className={`${styles['freelancing']} `}>
                         <h4>
-                            I'm delighted to share my journey on Fiverr.com, where I've completed 55+ projects, receiving positive reviews consistently. I'm proud to have attained the Level 2 seller tag from Level 1 in a short-time, which reflects my commitment to delivering high-quality work. I have orders with a 99.99% positive feedback rate and a 100% on-time project delivery record, highlighting my dedication to providing top-notch service and ensuring client satisfaction.
-                        </h4>
+                            I am excited to share my journey on Fiverr.com, where I've successfully completed over 115 projects with consistently positive reviews. I am proud to have quickly advanced from a Level 1 to a Level 2 seller, a testament to my commitment to delivering high-quality work. With a 99.99% positive feedback rate and a 100% on-time delivery record, I strive to provide exceptional service and ensure complete client satisfaction.                        </h4>
                         <span>FREELANCING PROFILE:-</span>   <a style={{ textDecoration: 'underline' }} rel="noreferrer" href='https://www.fiverr.com/jaivinmovaliya?public_mode=true' target={'_blank'}>CLICK HERE TO CHECKOUT</a>
                     </div>
                 </section>
@@ -98,13 +97,11 @@ const Home = () => {
                     </LightgalleryProvider>
 
                 </section>
-                <section className={`${styles['gallery']}`}>
-                    <h3 className={`${styles["section-heading"]} ${styles["main-color"]}  ${styles["f-3"]} `}>
-                        Projects
+                <section className={`${styles['gallery']} ${styles['gallery2']}`}>
+                    <h3 className={`${styles["section-heading"]} ${styles["main-color"]}  ${styles["f-3"]}  `}>
+                        Projects I have worked on
                     </h3>
-                    <p className={`${styles["section-description"]}  ${styles["f-2"]}`}>
-                        I have worked on
-                    </p>
+
                     <LightgalleryProvider lightgallerySettings={{ download: false, speed: 500, thumbnail: false, zoom: false, fullScreen: false, dynamic: true, flipHorizontal: false, top: "47px" }} >
                         <div className={`${styles['image-box']}`}>
                             {

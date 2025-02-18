@@ -3,7 +3,7 @@ import Footer from '../Footer/Footer';
 import Routers from '../Routers/Routers';
 import React, { useEffect, useState } from 'react';
 import SpaceBackground from "../../SpaceBackground";
-
+// import ThreeScene from "../../Space2";
 
 const Layout = () => {
 
@@ -17,11 +17,12 @@ const Layout = () => {
             else if (!isBlackTheme && window.scrollY > 0) { themeHandler(true) }
         });
 
+
     }, [])
 
     return (
         <div>
-            <SpaceBackground />
+            <SpaceBackground/>
             <Navbar />
             <Routers />
             <Footer />

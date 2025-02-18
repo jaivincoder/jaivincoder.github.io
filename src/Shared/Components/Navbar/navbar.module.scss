@@ -13,7 +13,7 @@
 
         .logo {
             margin                   : 0;
-            font-family              : 'lato', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family              : MegatransDemo-Regular !important;;
             font-size                : 2.5rem;
             line-height              : normal;
             font-weight              : 350;
@@ -21,6 +21,9 @@
             background-clip          : text;
             -webkit-text-fill-color  : transparent;
             animation-iteration-count: infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
 
             @keyframes example {

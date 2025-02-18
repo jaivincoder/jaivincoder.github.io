@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    background-size: cover;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+    pointer-events: none;
+}
+
+#canvas_container {
+    width: 100vw;
+    height: 100vh;
+}
+
+#star-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+button {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.9em;
+    background: #000000;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background: #ffffff;
+    color: #000000;
+}

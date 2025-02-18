@@ -13,26 +13,31 @@
     src        : url('../../Assets/Fonts/Roboto-Regular.woff'), url('../../Assets/Fonts/Roboto-Regular.woff2');
 }
 
+@font-face {
+    font-family: MegatransDemo-Regular;
+    src        : url('../../Assets/Fonts/AstroSpace-0Wl3o.otf');
+}
+
 html {
     font-size  : 16px !important;
-    font-weight: 375 !important;
-    font-family: 'lato' !important;
+    font-weight: 200 !important;
+    font-family: MegatransDemo-Regular !important;
 }
 
 body {
-    font-family: 'lato' !important;
+    font-family: MegatransDemo-Regular !important;
     font-size  : 1rem !important;
     color      : #fff;
     font-size  : 16px;
-    font-weight: 375 !important;
+    font-weight: 200 !important;
 }
 
 h4,
 h3 {
-    font-family: 'lato' !important;
+    font-family: MegatransDemo-Regular !important;
     color      : #fff;
-    font-size  : 1.3rem;
-    font-weight: 375 !important;
+    font-size  : 1rem !important;
+    font-weight: 200 !important;
 }
 
 label {
@@ -55,7 +60,7 @@ a {
 
 a {
     text-decoration: none;
-    font-family    : 'lato' !important;
+    font-family    : MegatransDemo-Regular !important;
     font-weight    : 375 !important;
     color          : unset;
 
@@ -65,7 +70,7 @@ a {
 }
 
 .active-nav {
-    font-family: Roboto-bold;
+    font-family: MegatransDemo-Regular;
     font-weight: bold;
 }
 
